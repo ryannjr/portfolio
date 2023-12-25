@@ -1,0 +1,31 @@
+<div class=" flex flex-row justify-evenly align-middle items-center h-24">
+    <div class = "flex flex-row text-lg font-[Mukta]">
+        <a class = "text-customRed hover:text-customWhite nav-btn-trans" href = "#" routerLink = '/'> &#123; ryanjr &#125;</a>
+        <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-customRed flex flex-wrap items-center text-base justify-center align-middle text"></nav>
+        <div class = "flex gap-4 text-lg">
+            <a class = "text-customRed hover:text-customWhite nav-btn-trans" 
+            href = "#" routerLink = '/education' >Education</a>
+            <a class = "text-customRed hover:text-customWhite nav-btn-trans" 
+            href = "#" routerLink = '/experience'>Experience</a>
+            <a class = "text-customRed hover:text-customWhite nav-btn-trans" 
+            href = "#" routerLink = '/projects'>Projects</a>
+        </div>
+    </div>
+    
+
+    <div class = "flex flex-row gap-4">
+        <a [href]= "GITHUB_URL" target = "_blank" 
+        class = "text-customRed text-3xl hover:text-customWhite hover:underline-offset-8 nav-btn-trans">
+            <fa-icon [icon]="faGithub"/>
+        </a>
+        <a [href] = "LINKEDIN_URL" target = "_blank" 
+        class = "text-customRed text-3xl hover:text-customWhite nav-btn-trans">
+            <fa-icon  [icon]="faLinkedin"/>
+        </a>
+        <a 
+        class = "text-customRed text-3xl hover:text-customWhite nav-btn-trans">
+            <fa-icon  [icon]="faEnvelope"/>
+        </a>
+    </div>
+
+</div>

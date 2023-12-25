@@ -1,0 +1,20 @@
+<div class="flex flex-col flex-1 select-text bg-[#101010] border-customRed border-[1px] shadow-lg shadow-customRed/40 rounded-lg min-h-72 w-96 p-4 __proj_container">
+    <div class="flex justify-between items-center align-middle">
+        <p class="text-3xl text-white font-[Mukta]">{{project_name}}</p>
+        <a [href] = "project_link" target="_blank">
+            <fa-icon class = "text-3xl text-white"[icon]="faGithub"></fa-icon>
+        </a>
+    </div>
+    <div class="text-wrap flex flex-col justify-between mt-6 min-h-48">
+        <p class = "text-white flex-1 text-md">{{project_description}}</p>
+        <div class = "mt-3">
+            @for(tech of project_tech; track $index){
+                @if($index === project_tech.length - 1){
+                    <span class = "text-customRed italic text-sm">{{tech}}</span>
+                } @else {
+                    <span class = "text-customRed italic  text-sm">{{tech}}, </span>
+                }
+            }
+        </div>
+    </div>
+</div>

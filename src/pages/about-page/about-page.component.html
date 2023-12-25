@@ -1,0 +1,70 @@
+<div class="min-h-full flex flex-col items-center justify-center">
+    <div class = "w-[60%] flex flex-col gap-2">
+        <div class = "flex flex-col gap-4">
+            <h1 class = 'text-customRed font-[Poppins] underline underline-offset-8 text-3xl __scale w-fit'>About Me</h1>
+            <p class = 'text-white font-[Poppins] text-md'>Hello there! 👋, I'm Ryan, a passionate software developer specializing in 
+            <b>Data Science</b> at the <b>University of Toronto</b>. With a strong interest and background in Web Applications 
+            and Database Management, I am dedicated to creating and delivering robust high-quality software solutions for real-world problems.
+            </p> 
+        </div>
+
+        <div class="flex flex-col gap-6">
+            <h1 class = 'text-customRed font-[Poppins] underline underline-offset-[12px] text-3xl __scale w-fit'>Skills</h1>
+            <div class = 'flex flex-col text-center gap-4'>
+                <h1 class = 'text-customWhite font-[Poppins] text-2xl w-fit'>Web Technologies</h1>
+                <div class = "flex flex-row min-w-full gap-10 select-none">
+                    @for (language of web_tech; track $index) {
+                        <icon-image 
+                        [techName]="language.name" 
+                        [techPath]="language.img_src"
+                        [techColour]="language.isBlack"
+                        />
+                    }
+                </div>
+            </div>
+
+            <div class = 'flex flex-col text-center gap-4'>
+                <h1 class = 'text-customWhite font-[Poppins] text-2xl w-fit'>Programming Languages</h1>
+                <div class = "flex flex-row min-w-full gap-10 select-none">
+                    @for (language of software_tech; track $index) {
+                        <icon-image 
+                        [techName]="language.name" 
+                        [techPath]="language.img_src"
+                        [techColour]="language.isBlack"
+                        />
+                    }
+                </div>
+            </div>
+
+            <div class = 'flex flex-col text-center gap-4'>
+                <h1 class = 'text-customWhite font-[Poppins] text-2xl w-fit'>Database Management Systems</h1>
+                <div class = "flex flex-row min-w-full gap-10 select-none">
+                    @for (language of dbms; track $index) {
+                        <icon-image 
+                        [techName]="language.name" 
+                        [techPath]="language.img_src"
+                        [techColour]="language.isBlack"
+                        />
+                    }
+                </div>
+            </div>
+
+            <div class = 'flex flex-col text-center gap-4'>
+                <h1 class = 'text-customWhite font-[Poppins] text-2xl w-fit'>Developer Tools</h1>
+                <div class = "flex flex-row min-w-full gap-10 select-none">
+                    @for (language of tools; track $index) {
+                        <icon-image 
+                        [techName]="language.name" 
+                        [techPath]="language.img_src"
+                        [techColour]="language.isBlack"
+                        />
+                    }
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>

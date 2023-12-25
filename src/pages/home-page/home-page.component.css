@@ -1,0 +1,179 @@
+
+@keyframes move-bg {
+    to {
+        background-position: 200% center;
+    }
+}
+.__hometext-gradient{
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.__hometext::before{
+    display: block;
+    position: absolute;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+.__hometext1::before {
+    content: "Ryan Ramroop";
+}
+
+.__hometext2::before {
+    content: "Software Developer";
+}
+
+.__hometext3::before {
+    content: "University of Toronto";
+}
+
+.__hometext1::before {
+    /* ... */
+    animation: first_heading_white_text 8s infinite;
+}
+
+.__hometext2::before {
+    /* ... */
+    animation: second_heading_white_text 8s infinite;
+}
+
+.__hometext3::before {
+    /* ... */
+    animation: third_heading_white_text 8s infinite;
+}
+
+@keyframes first_heading_gradient {
+    0%,
+    /* 16.667 = 1/6 */
+    16.667% {
+        opacity: 1;
+    }
+    /* 33.333% = 2/6 */
+    33.333%,
+    /* 83.333% = 5/6 */
+    83.333% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes second_heading_gradient {
+    0%,
+    16.667% {
+        opacity: 0;
+    }
+    33.333%,
+    50% {
+        opacity: 1;
+    }
+
+    66.667%,
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes third_heading_gradient {
+    0%,
+    50% {
+        opacity: 0;
+    }
+
+    66.667%,
+    83.333% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes first_heading_white_text {
+    0%,
+    /* 16.667 = 2/12 */
+    16.667% {
+        opacity: 0;
+    }
+
+    /* 25% = 3/12 */
+    25%,
+    /* 16.667 = 9/12 */
+    91.667% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes second_heading_white_text {
+    0%,
+    25% {
+        opacity: 1;
+    }
+
+    33.333%,
+    50% {
+        opacity: 0;
+    }
+
+    58.333%,
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes third_heading_white_text {
+    0%,
+    58.333% {
+        opacity: 1;
+    }
+
+    66.667%,
+    83.333% {
+        opacity: 0;
+    }
+
+    91.667%,
+    100% {
+        opacity: 1;
+    }
+}
+
+.__hometext1 > .__hometext-gradient{
+    background-image: linear-gradient(90deg, rgba(233,7,106,1) 0%, rgba(180,11,40,1) 100%);
+    animation: first_heading_gradient 8s infinite;
+}
+.__hometext2 > .__hometext-gradient{
+    background-image: linear-gradient(90deg, rgba(233,7,106,1) 0%, rgba(180,11,40,1) 100%);
+    animation: second_heading_gradient 8s infinite;
+}
+.__hometext3 > .__hometext-gradient{
+    background-image: linear-gradient(90deg, rgba(233,7,106,1) 0%, rgba(180,11,40,1) 100%);
+    animation: third_heading_gradient 8s infinite;
+}
+
+.__resume{
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(90deg, #DA0037 60.9%, rgb(10, 0, 0) 122.3% );
+}
+.__resume:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+
+.__downarrow{
+    transition: transform 0.5s ease;
+}
+.__downarrow:hover{
+    transform: translateY(10px);
+}
+
+.__aboutme{
+    transition: transform 0.5 ease;
+}

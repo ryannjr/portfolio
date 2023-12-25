@@ -1,0 +1,12 @@
+.__scale{
+    transition: transform 0.1s ease-in-out;
+}
+
+.__scale:hover{
+    transform: translateX(-5px);
+}
+
+.__white{
+    filter: invert(1);
+
+}

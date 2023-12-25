@@ -1,0 +1,29 @@
+<div class="min-h-full flex flex-col items-center justify-center gap-10">
+    <div class = "flex flex-col items-center font-[Mukta] font-extrabold">
+        <p class = "text-[4rem] h-auto select-none __hometext  __hometext1">
+            <span class = "__hometext-gradient">Ryan Ramroop</span>
+        </p>
+        <p class = "text-3xl  h-auto select-none __hometext __hometext2">
+            <span class = "__hometext-gradient">Software Developer</span>
+        </p>
+        <p class = "text-3xl h-auto select-none __hometext __hometext3">
+            <span class = "__hometext-gradient">University of Toronto</span>
+        </p>
+
+        <div class = "mt-10">
+            <a [href] = "resumePath" target = "_blank">
+                <button class = "text-customWhite font-[Poppins] font-bold border p-2 w-32 h-12
+                rounded-md border-none __resume">
+                Resume
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class = "flex flex-col justify-center items-center mt-48">
+        <p class = "text-white font-[Poppins] __aboutme">ABOUT ME </p>
+        <button class = "text-white __downarrow" (click)="handleClick()">
+            <fa-icon [icon] = "faAngleDown"></fa-icon>
+        </button>
+    </div>
+</div>
