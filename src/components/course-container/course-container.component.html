@@ -1,0 +1,18 @@
+<div class="flex flex-col justify-between mb-10 flex-1 select-text bg-[#101010] border-customRed border-[1px] shadow-lg shadow-customRed/40 rounded-lg min-h-72 w-96 p-4 __proj_container">
+    <div class = "flex flex-col font-[Mukta] font-bold">
+        <p class="text-customWhite text-2xl">{{courseCode}}</p>
+        <p class="text-customWhite text-md italic">{{courseName}}</p>
+    </div>
+    <div class = "flex text-customWhite font-[Mukta] font-bold">
+        <p>{{courseDescription}}</p>
+    </div>
+    <div class = "text-customRed italic">
+        @for(concept of concepts; track $index){
+            @if($index == concepts.length - 1){
+                <span>{{concept}}</span>
+            } @else {
+                <span>{{concept}}, </span>
+            }
+        }
+    </div>
+</div>
