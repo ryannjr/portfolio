@@ -1,12 +1,12 @@
 
 @if(techColour){
-    <div class="flex flex-col justify-center items-center align-middle w-12 gap-2">
+    <div class="flex flex-col justify-center items-center align-middle w-12 gap-4 __icon">
         <img class = "w-12  __white" [src] = "techPath"/>
         <p class="text-customWhite font-[Poppins] font-bold flex justify-center">{{techName}}</p>
     </div>
 }
 @else{
-    <div class="flex flex-col justify-center items-center align-middle w-12 gap-2">
+    <div class="flex flex-col justify-center items-center align-middle w-12 gap-4 __icon">
         <img class = "w-12" [src] = "techPath"/>
         <p class="text-customWhite font-[Poppins] font-bold flex justify-center items-center text-center">{{techName}}</p>
     </div>

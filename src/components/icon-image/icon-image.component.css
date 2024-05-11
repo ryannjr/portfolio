@@ -1,3 +1,11 @@
 .__white{
     filter: invert(1);
 }
+
+.__icon{
+    transition: transform 0.3s ease-in-out
+}
+
+.__icon:hover{
+    transform: scale(1.25);
+}

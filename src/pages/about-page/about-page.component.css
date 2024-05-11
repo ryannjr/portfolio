@@ -5,8 +5,3 @@
 .__scale:hover{
     transform: translateX(-5px);
 }
-
-.__white{
-    filter: invert(1);
-
-}

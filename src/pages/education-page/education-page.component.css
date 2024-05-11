@@ -5,3 +5,11 @@
 .__scale:hover{
     transform: translateX(-5px);
 }
+
+.__education{
+    transition: transform 0.3s ease-in-out
+}
+
+.__education:hover{
+    transform: scale(1.05);
+}

@@ -33,9 +33,9 @@ export const PROJECTS: Project[] = [
         tech: ['Android Studio', 'Java', 'XML']
     },
     {
-        name: "DesktopAnalyst",
-        description: "Desktop application that evaluates a company's financial status (Profitability, Liquidity, Solvency).",
-        github_link: "https://github.com/ryannjr/DesktopAnalyst",
-        tech: ['Python']
+        name: "Personal Portfolio",
+        description: "Personal portfolio website showcasing personal information, skills and experience",
+        github_link: "https://github.com/ryannjr/portfolio",
+        tech: ['Angular', 'Tailwind', 'Github Actions']
     },
 ]

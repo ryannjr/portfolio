@@ -1,0 +1,7 @@
+.__proj_container{
+    transition: transform 0.3s ease-in-out
+}
+
+.__proj_container:hover{
+    transform: scale(1.08);
+}
