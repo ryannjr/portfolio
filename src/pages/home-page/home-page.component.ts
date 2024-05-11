@@ -14,7 +14,7 @@ export class HomePageComponent {
   @Output() messageToParent: EventEmitter<string> = new EventEmitter();
   ABOUT_OFFSET_TOP = 1080; // 945 px 
   faAngleDown = faAngleDown
-  resumePath = "../../assets/resume/resume.pdf";
+  resumePath = "assets/resume/resume.pdf";
   ngOnInit(){
     console.log('HomePageComponent');
   }

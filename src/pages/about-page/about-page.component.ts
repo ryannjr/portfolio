@@ -15,8 +15,10 @@ export class AboutPageComponent {
   dbms: Tech[] = DBMS;
   tools: Tech[] = TOOLS;
 
-  constructor(private el: ElementRef){}
+  constructor(public el: ElementRef){}
   ngOnInit() {
     console.log(this.el.nativeElement.offsetTop);
   }
+  
 }
+

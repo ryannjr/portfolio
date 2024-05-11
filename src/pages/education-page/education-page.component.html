@@ -1,6 +1,5 @@
 <div class = "flex flex-col h-screen">
     <div>
-        <header-top-menu/>
         <navbar/>
     </div>
     
@@ -8,7 +7,7 @@
         <div class="min-h-full flex flex-col items-center">
             <div class = "w-1/2 flex flex-col gap-10">
                 <p class = "text-customRed font-[Poppins] underline underline-offset-[12px] text-3xl __scale w-fit">Education</p>
-                <div class="flex flex-col flex-1 select-text bg-[#101010] border-customRed border-[1px] shadow-lg shadow-customRed/40 
+                <div class="flex flex-col flex-1 select-text bg-[#101010] border-customRed border-[1px] shadow-lg shadow-customRed/40 __education 
                     rounded-lg min-h-32 p-4 __proj_container">
                     <div class = "flex flex-row justify-between items-center ">
                         <p class = "text-customWhite font-[Mukta] font-bold text-3xl">University of Toronto</p>
@@ -19,6 +18,7 @@
                 </div>
 
                 <p class = "text-customRed font-[Poppins] underline underline-offset-[12px] text-3xl __scale w-fit">Relevant Courses</p>
+                
                 <div class = "flex flex-row flex-wrap justify-between">
                     @for(course of courses; track $index){
                         <course-container

@@ -1,0 +1,15 @@
+.__scale{
+    transition: transform 0.1s ease-in-out;
+}
+
+.__scale:hover{
+    transform: translateX(-5px);
+}
+
+.__experience{
+    transition: transform 0.3s ease-in-out
+}
+
+.__experience:hover{
+    transform: scale(1.05);
+}
